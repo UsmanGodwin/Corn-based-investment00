@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Base Investment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    .blink {
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      font-size: 18px;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50%, 100% {opacity: 1;}
+      25%, 75% {opacity: 0;}
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .stars {
+      color: gold;
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    .locked {
+      opacity: 0.9;
+      background: #ffeb3b;
+      font-size: 16px;
+      cursor: pointer;
+      border: 2px solid #f00;
+      animation: blink 1s infinite;
+    }
+    .testimonials {
+      margin: 40px 20px;
+    }
+    .testimonial-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .chat-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #333;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+    #about {
+	display:flex;
+	justify-content:center;
+      padding: 50px 20px;
+      color: white;
+      text-align: center;
+      background: url('gold.jpg') no-repeat center/cover;
+    }
+	.about_box{
+	background: rgba(255, 255, 255, 0.3);
+	padding:30px;
+	border-radius: 15px; 
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+	max-width:600px;
+	text-align: center;
+	backdrop-filter:blur(5px);
+	}
+	 #about h2{
+	color: gold;
+	margin: 0 0 15px;
+	 }
+	 	 
+#about p{
+	color: white;
+	margin: 0 0 15px;
+	 }
+    footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+<header>Coin Base Investment</header>
+
+<p class="blink">4 days left till closure!</p>
+
+<section id="about">
+<div class="about_box">
+  <h2>About Coin Base Investment</h2>
+  <p>Coin Base Investment is your trusted platform for secure cryptocurrency investments, offering easy access to digital asset growth and financial empowerment.</p>
+</div>
+</section>
+
+<h2>Group Profiles</h2>
+<div class="container">
+  <div class="card">
+    <img src="image01.jpeg" alt="Profile 1">
+    <h3>John</h3>
+    <p>Amount: $12000</p>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+  </div>
+    <div class="card">
+    <img src="image.jpg" alt="Profile 2">
+    <h3>Harding</h3>
+    <p>Amount: $74000</p>
+    <div class="stars">⭐⭐⭐</div>
+    <a class="chat-link" onclick="alert('You need 5 stars to place withdrawal!')">Withdraw</a>
+  </div>
+  <div class="card">
+    <img src="image1.jpg" alt="Profile 2">
+    <h3>Kimma</h3>
+    <p>Amount: $1300</p>
+    <div class="stars">⭐</div>
+  </div>
+  <div class="card">
+    <img src="image02.jpeg" alt="Profile 3">
+    <h3>Mike Johnson</h3>
+    <p>Amount: $15550</p>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+
+  </div>
+  
+    <div class="card">
+    <img src="image03.jpg" alt="Profile 2">
+    <h3>Jane Smith</h3>
+    <p>Amount: $3000</p>
+    <div class="stars">⭐⭐</div>
+ 
+  </div>
+  <div class="card locked" onclick="alert('Unlock group by contacting our support team')">
+    <h3>Group Locked <br> <i> -Premium </i></h3>
+  </div>
+  <div class="card locked" onclick="alert('Unlock group by contacting our support team')">
+    <h3>Group Locked <br> <i> -Exclusive </i></h3>
+  </div>
+</div>
+
+<h2>Testimonials</h2>
+<div class="testimonials">
+  <div class="testimonial-card">
+    <img src="image04.jpg" alt="Client 1">
+    <p>"This platform changed my life! So easy to invest."</p>
+  </div>
+  <div class="testimonial-card">
+    <img src="image05.jpg" alt="Client 2">
+    <p>"Great service and secure transactions."</p>
+  </div>
+  <div class="testimonial-card">
+    <img src="image10.jpg" alt="Client 3">
+    <p>"I recommend Coin Base Investment to all my friends."</p>
+  </div>
+  <div class="testimonial-card">
+    <img src="image2.jpg" alt="Client 4">
+    <p>"Fast withdrawals and great customer support!"</p>
+  </div>
+  <div class="testimonial-card">
+    <img src="image09.jpg" alt="Client 5">
+    <p>"Investing made easy, love this site!"</p>
+  </div>
+  <div class="testimonial-card">
+    <img src="image10.jpg" alt="Client 6">
+    <p>"A secure and transparent platform."</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Coin Base Investment. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
